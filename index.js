@@ -85,9 +85,9 @@ const logoArray = {
 };
 
 const backGroundArray = {
-  England: "./images/background/englandBack.jpg ",
-  Korea: "./images/background/koreaBack.jpg ",
-  Brazil: "./images/background/brazilBack.jpg   ",
+  England: "./images/background/englandBack.jpg",
+  Korea: "./images/background/koreaBack.jpg",
+  Brazil: "./images/background/brazilBack.jpg",
 };
 
 const items = Array.from({ length: 9 }, (_, index) => {
