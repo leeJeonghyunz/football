@@ -11,6 +11,7 @@
   background-image: url("./images/grass.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 1s;
 }
 
 .wrapper__left {
