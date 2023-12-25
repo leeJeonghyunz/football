@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./images/grass.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper__left {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamLogoWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.clickHere {
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  height: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.playerWrapper {
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /*이것으로 넓이 조절*/
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.wrapper__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+}
+
+.videoWrapper {
+  width: 80%;
+  height: 80%;
+  background-image: url("./images/shorts.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.item {
+  width: 100%;
+  border: 3px solid black;
+  display: flex;
+  position: relative;
+  transition: all 1s;
+}
+
+.item img {
+  transition: all 1s;
+}
+
+.playerInfo {
+  font-size: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.item:hover img {
+  opacity: 0.2;
+  transform: rotateY(180deg);
+}
+
+.item:hover .playerInfo {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#playerName {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
