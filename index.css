@@ -74,9 +74,22 @@
 .videoWrapper {
   width: 80%;
   height: 80%;
-  background-image: url("./images/shorts.png");
+  /* background-image: url("./images/shorts.png");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoWrapper > svg {
+  width: 50%;
+  height: 50%;
+  fill: #ff0000;
+  stroke: black;
+  stroke-width: 10;
 }
 
 .item {

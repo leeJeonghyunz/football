@@ -115,6 +115,11 @@ const items = Array.from({ length: 9 }, (_, index) => {
     const youtubeFrame = document.querySelector(".videoWrapper iframe");
     youtubeFrame.src = playerInfoArray[index].youtube;
 
+    const iframe = document.querySelector("iframe");
+    const svg = document.querySelector("svg");
+    iframe.classList.remove("hidden");
+    svg.classList.add("hidden");
+
     const logo = document.querySelector(".logo img");
     const logoName = playerInfoArray[index].nation;
     logo.src = logoArray[logoName];
